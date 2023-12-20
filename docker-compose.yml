@@ -62,7 +62,7 @@ services:
       mysql_network:
         ipv4_address: 174.17.0.6
 
-  # MySQL Master
+  # MySQL Server A
   mysql1:
     image: mysql/mysql-cluster:latest
     container_name: mysql1
@@ -82,7 +82,7 @@ services:
       SERVICE_NAME: mysql
       MYSQL_TCP_PORT: 3306
 
-  # MySQL Slave
+  # MySQL Server B
   mysql2:
     image: mysql/mysql-cluster:latest
     container_name: mysql2

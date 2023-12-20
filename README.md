@@ -27,7 +27,7 @@ Run this file by running `docker compose up -d` in the folder.
 
 ### MySQL Instances
 
-#### MySQL1 (Master)
+#### MySQL 1
 - **Image:** mysql/mysql-cluster:latest
 - **Container Name:** mysql1
 - **Command:** mysqld --ndb-nodeid=6 --ndb-connectstring 174.17.0.2 --default-storage-engine=NDBCLUSTER
@@ -45,7 +45,7 @@ Run this file by running `docker compose up -d` in the folder.
   - `SERVICE_NAME: mysql`
   - `MYSQL_TCP_PORT: 3306`
 
-#### MySQL2 (Slave)
+#### MySQL 2
 - **Image:** mysql/mysql-cluster:latest
 - **Container Name:** mysql2
 - **Command:** mysqld --ndb-nodeid=7 --ndb-connectstring 174.17.0.2 --default-storage-engine=NDBCLUSTER
